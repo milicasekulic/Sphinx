@@ -153,6 +153,7 @@ section.feature {
     display: inline-block;
     padding-right: 10px;
     padding-left: 10px;
+    height: 180px;
 }
 
 .fa {
@@ -331,18 +332,18 @@ button.contact:hover {
     bottom: 0;
 }
 
-section.team {
+section.team,
+section.pricing,
+section.blog,
+section.location {
     text-align: center;
     color: #585858;
-    padding: 70px 0;
+    padding: 50px 0;
+    clear: both;
 }
 
-.team_wrap {
-    margin: 60px auto 30px;
-}
-
-.team_wrap h6 {
-	margin-top: 60px;
+.team_wrap, .pricing_wrap, .blog_wrap, .location_wrap {
+    margin: 15px auto 30px;
 }
 
 article {
@@ -405,8 +406,11 @@ i.fa.fa-twitter, i.fa.fa-facebook, i.fa.fa-google-plus, i.fa.fa-linkedin {
     vertical-align: -webkit-baseline-middle;
 }
 
-section.counter {
-	background: #e1e1e1;
+section.counter,
+section.blog,
+section.clients {
+	background: #f8f8f8;
+	clear: both;
 }
 
 .row_box {
@@ -440,5 +444,418 @@ span.fa.fa-hourglass-o {
 .box_name {
     font-size: 14px;
     font-weight: 400;
+}
+
+.row_price,
+.row_blog {
+    margin: 0 auto;
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+.pricing_box{
+    width: 29.3%;
+    border: 1px solid #f5f5f5;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.pricing_header {
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.pricing_header h5 {
+    color: #188ae2;
+    font-size: 18px;
+    padding: 20px 0 10px;
+    margin: 0;
+}
+
+.pricing_header p {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 14px;
+}
+
+.price {
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 40px;
+    padding: 20px;
+    font-weight: 800;
+}
+
+small {
+    font-size: 12px;
+    color: #188ae2;
+}
+
+.features ul {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.features ul li {
+    border-bottom: 1px solid #f5f5f5;
+    width: 100%;
+    margin: 0;
+    padding: 10px 28px;
+}
+
+i.fa.fa-comments-o {
+    font-size: 22px;
+    padding: 0 10px;
+    margin: 0;
+}
+
+button.order {
+    background: #3b3939;
+    border: none;
+    outline: none;
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 3px;
+    margin: 20px;
+}
+.blog_box {
+    width: 29.3%;
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin: 0 20px;
+    background-color: #fff;
+}
+
+.blog_image img {
+    width: 100%;
+}
+
+.blog_content {
+    text-align: left;
+    padding: 0 20px;
+    }
+
+.blog_content h5 {
+    padding: 5px 0;
+    font-weight: 400;
+    color: #333;
+    font-size: 16px;
+}
+
+.blog_content p {
+    font-size: 15px;
+    color: #969595;
+    font-weight: 600;
+    text-align: left;
+}
+
+.footer_blog {
+    height: 50px;
+    background-color: #f8f8f8;
+    color: #777;
+    font-size:13px;
+    border-top:1px solid #ddd;
+}
+
+i.fa.fa-comment-o {
+    font-size: 19px;
+    vertical-align: baseline;
+    float: none;
+    display: inline-block;
+    padding: 13px;
+    padding-right: 10px;
+    margin: 0;
+}
+
+i.fa.fa-arrow-right {
+    float: none;
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 13px;
+    padding: 17px;
+    vertical-align: baseline;
+}
+
+p.right, p.left {
+    display: inline-block;
+    margin: 0;
+}
+
+p.right {
+	float: right;
+}
+
+p.left {
+	float: left;
+}
+
+.location_form, iframe {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    float: left;
+    height: 305px;
+}
+
+iframe {
+	border: none;
+}
+
+input[type="text"],
+input[type="email"] {
+background: #f8f8f8;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    border: 1px solid #ddd;
+    min-height: 40px;
+    width: 49%;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="email"] {
+	float: right;
+}
+
+textarea {
+    background: #f8f8f8;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    border: 1px solid #ddd;
+    min-height: 200px;
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    font-family:"Open Sans", sans-serif;
+    padding: 10px;
+}
+
+input[type="submit"] {
+	display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #1ea5ff;
+    color: #ffffff;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    padding: 13px;
+
+}
+section.clients {
+    padding: 50px;
+}
+
+.clients_wrap {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.clients_box {
+    display: inline-block;
+    margin: 0 52px;
+    text-align: center;
+}
+.clients_box img {
+    width: 100%;
+    margin: 0;
+}
+
+
+
+@media screen and (max-width:1200px) {
+
+.wrapper{
+	width: 95%;
+}
+
+ul.main_nav {
+    display: inline-block;
+    padding-left: 0px;
+}
+
+ul li {
+	margin-left: 25px;
+}
+
+.card{ 
+    height: 260px;
+}
+
+.contact_us {
+    height: 230px;
+}
+
+.txt_left {
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.txt_left h3 {
+    font-size: 21px;
+}
+
+button.contact {
+    display: block;
+    float: none;
+    background-color: #fff;
+    padding: 13px 36px;
+    font-size: 14px;
+    margin-top: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+
+.project {
+	width: 50%;
+}
+
+.portfolio ul {
+    padding: 0;
+}
+
+.pricing_box {
+	margin: 0 10px;
+}
+
+.counter_box {
+	padding: 50px;
+}
+}
+
+@media screen and (max-width:780px) {
+
+.wrapper{
+	width: 95%;
+}
+
+ul.main_nav {
+	display: none;
+}
+
+button.mobile_nav {
+    border: none;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    border: solid 2px #1299d5;
+    border-radius: 3px;
+    padding: 1px;
+    margin-top: 13px;
+    position: relative;
+    float: right;
+    display: block;
+    background: none;
+}
+
+button.mobile_nav a {
+text-decoration:none;
+}
+
+i.fa.fa-bars {
+    color: #1299d5;
+    padding: 0;
+    margin: 0;
+    float: none;
+    text-align: center;
+    font-size: 23px;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-top: -40px;
+}
+
+.content p {
+    width: 90%;
+    margin: 28px auto;
+}
+
+.card {
+    width: 95%;
+    display: block;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.card_txt {
+    float: right;
+    width: 83%;
+}
+
+.contact_us {
+    height: 270px;
+}
+
+.txt_left {
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.txt_left h3 {
+    font-size: 21px;
+}
+
+button.contact {
+    display: block;
+    float: none;
+    background-color: #fff;
+    padding: 13px 36px;
+    font-size: 14px;
+    margin-top: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+h2 {
+	font-size:20px;
+} 
+
+.portfolio_wrap ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    display:block;
+    margin-left:0px;
+    margin: auto;
+    text-align: -webkit-center;
+}
+
+.project {
+	width: 100%;
+}
+
+ul.social_team {
+
+    padding: 20px 0;
+}
+
+.counter_box {
+    padding: 30px 80px 0;
+}
+
+.pricing_box {
+    width: 80%;
+    border: 1px solid #f5f5f5;
+    float: none;
+    margin: 20px auto;
+}
+
 }
 
