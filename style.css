@@ -672,6 +672,8 @@ section.clients {
     width: 100%;
     margin: 0;
 }
+
+
 footer {
 	background-color: #2a2a2a;
 	color: #fff;
@@ -869,6 +871,10 @@ width: 90%;
 .clients_box {
     margin: 0 30px;
     }
+    
+.blog_box {
+	margin-bottom: 20px;
+}
 
 }
 
